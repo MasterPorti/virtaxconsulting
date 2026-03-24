@@ -1,26 +1,181 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Material Design 3 Color Palette */
+  --color-on-primary-container: #ffada6;
+  --color-on-secondary: #ffffff;
+  --color-secondary: #406181;
+  --color-on-error-container: #93000a;
+  --color-surface-bright: #fbf9f8;
+  --color-on-primary: #ffffff;
+  --color-on-primary-fixed-variant: #930212;
+  --color-on-secondary-fixed-variant: #274968;
+  --color-inverse-surface: #303030;
+  --color-surface-container: #f0eded;
+  --color-on-tertiary-container: #9fc5f8;
+  --color-secondary-fixed-dim: #a8caee;
+  --color-background: #fbf9f8;
+  --color-on-tertiary-fixed-variant: #1f4874;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary-fixed: #410003;
+  --color-error-container: #ffdad6;
+  --color-primary-container: #a0111a;
+  --color-on-secondary-fixed: #001d33;
+  --color-surface-container-low: #f6f3f2;
+  --color-error: #ba1a1a;
+  --color-surface-container-high: #eae8e7;
+  --color-on-secondary-container: #3d5e7e;
+  --color-primary-fixed-dim: #ffb3ad;
+  --color-outline: #8e706d;
+  --color-tertiary: #0b3b66;
+  --color-surface-variant: #e4e2e1;
+  --color-primary: #79000c;
+  --color-on-surface-variant: #5a403e;
+  --color-on-tertiary-fixed: #001c37;
+  --color-secondary-fixed: #cee5ff;
+  --color-on-error: #ffffff;
+  --color-surface: #fbf9f8;
+  --color-outline-variant: #e2bebb;
+  --color-inverse-primary: #ffb3ad;
+  --color-surface-dim: #dcd9d9;
+  --color-tertiary-fixed-dim: #a3c9fc;
+  --color-on-surface: #1b1c1c;
+  --color-tertiary-fixed: #d2e4ff;
+  --color-on-background: #1b1c1c;
+  --color-surface-container-highest: #e4e2e1;
+  --color-surface-tint: #b52427;
+  --color-tertiary-container: #2a527e;
+  --color-secondary-container: #b6d8fd;
+  --color-inverse-on-surface: #f3f0f0;
+  --color-surface-container-lowest: #ffffff;
+  --color-primary-fixed: #ffdad6;
+
+  /* CTA Colors - High Conversion */
+  --color-cta: #16a34a;
+  --color-cta-hover: #15803d;
+  --color-cta-text: #ffffff;
+  --color-whatsapp: #25d366;
+
+  /* Font families */
+  --font-headline: var(--font-manrope);
+  --font-body: var(--font-inter);
+  --font-label: var(--font-inter);
+
+  /* Border radius */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Material Symbols styling */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+}
+
+::selection {
+  background-color: color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
+
+/* CTA Button Animation */
+.cta-button {
+  background-color: var(--color-cta);
+  color: var(--color-cta-text);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button:hover {
+  background-color: var(--color-cta-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px -10px rgba(22, 163, 74, 0.5);
+}
+
+.cta-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Pulse animation for CTAs */
+@keyframes pulse-cta {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(22, 163, 74, 0);
+  }
+}
+
+.cta-pulse {
+  animation: pulse-cta 2s infinite;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+  background-color: var(--color-whatsapp);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 40px -10px rgba(37, 211, 102, 0.5);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Shake animation for urgency */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #c41e3a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Counter badge */
+.urgency-badge {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  animation: pulse-cta 2s infinite;
 }
