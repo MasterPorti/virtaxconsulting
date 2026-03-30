@@ -50,11 +50,11 @@
   --color-surface-container-lowest: #ffffff;
   --color-primary-fixed: #ffdad6;
 
-  /* CTA Colors - High Conversion */
-  --color-cta: #16a34a;
-  --color-cta-hover: #15803d;
+  /* CTA Colors - Professional */
+  --color-cta: #1e3a5f;
+  --color-cta-hover: #152a45;
   --color-cta-text: #ffffff;
-  --color-whatsapp: #25d366;
+  --color-whatsapp: #128c7e;
 
   /* Font families */
   --font-headline: var(--font-manrope);
@@ -109,7 +109,7 @@ body {
 .cta-button:hover {
   background-color: var(--color-cta-hover);
   transform: translateY(-2px);
-  box-shadow: 0 10px 40px -10px rgba(22, 163, 74, 0.5);
+  box-shadow: 0 10px 40px -10px rgba(30, 58, 95, 0.5);
 }
 
 .cta-button:active {
@@ -119,10 +119,10 @@ body {
 /* Pulse animation for CTAs */
 @keyframes pulse-cta {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4);
+    box-shadow: 0 0 0 0 rgba(30, 58, 95, 0.4);
   }
   50% {
-    box-shadow: 0 0 0 15px rgba(22, 163, 74, 0);
+    box-shadow: 0 0 0 15px rgba(30, 58, 95, 0);
   }
 }
 
@@ -138,7 +138,7 @@ body {
 
 .whatsapp-button:hover {
   transform: scale(1.1);
-  box-shadow: 0 10px 40px -10px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 10px 40px -10px rgba(18, 140, 126, 0.5);
 }
 
 /* Floating animation */
