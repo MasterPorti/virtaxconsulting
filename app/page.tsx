@@ -40,7 +40,7 @@ export default function Home() {
             </p>
 
             {/* Trust badges */}
-            <div className="flex flex-wrap items-center gap-4 mb-8 text-sm text-on-surface-variant">
+            <div className="flex flex-wrap items-center gap-4 mb-2 text-sm text-on-surface-variant">
               <span className="flex items-center gap-1">
                 <span
                   className="material-symbols-outlined text-cta text-lg"
@@ -66,9 +66,12 @@ export default function Home() {
                 >
                   check_circle
                 </span>
-                Resultados en 48hrs
+                Resultados en 48hrs*
               </span>
             </div>
+            <p className="text-xs text-on-surface-variant/70 mb-6">
+              *Una vez contando con la informacion que proporcione la empresa
+            </p>
 
             {/* Main CTA */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -85,7 +88,7 @@ export default function Home() {
             <div className="flex gap-8 md:gap-12 pt-8 border-t border-outline-variant/20">
               <div>
                 <p className="text-3xl md:text-4xl font-headline font-extrabold text-primary">
-                  18+
+                  20+
                 </p>
                 <p className="text-sm text-on-surface-variant">
                   Anos de experiencia
@@ -460,7 +463,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials - DESACTIVADO temporalmente
       <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
@@ -534,6 +537,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-surface-container-low">
@@ -613,7 +617,7 @@ export default function Home() {
 
           <div className="flex justify-center gap-8 mt-10 pt-10 border-t border-white/20">
             <div>
-              <p className="text-4xl font-bold">18+</p>
+              <p className="text-4xl font-bold">20+</p>
               <p className="text-sm opacity-80">Anos de experiencia</p>
             </div>
             <div>
@@ -750,7 +754,7 @@ export default function Home() {
               </span>
               <p className="font-bold text-on-surface">Telefono</p>
               <p className="text-sm text-on-surface-variant">
-                +52 (55) 5555-1234
+                +52 (55) 5523-1568
               </p>
             </div>
             <div className="p-6">
@@ -759,7 +763,8 @@ export default function Home() {
               </span>
               <p className="font-bold text-on-surface">Email</p>
               <p className="text-sm text-on-surface-variant">
-                contacto@virtax.com.mx
+                {/* TODO: verificar si contacto@virtax.com.mx esta activo */}
+                info@virtaxconsulting.com
               </p>
             </div>
           </div>

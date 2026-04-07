@@ -25,7 +25,8 @@ export default function Footer() {
             <h2 className="text-lg font-black mb-4">VIRTax Consulting S.C.</h2>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs mb-6">
               Especialistas en diagnostico fiscal empresarial. Protegemos a las
-              PYMES mexicanas de riesgos fiscales y multas del SAT.
+              PYMES mexicanas y emprendedores personas fisicas de riesgos
+              fiscales y multas del SAT.
             </p>
             <div className="flex gap-4">
               <a
@@ -138,11 +139,12 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-lg">call</span>
-                +52 (55) 5555-1234
+                +52 (55) 5523-1568
               </li>
               <li className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-lg">mail</span>
-                contacto@virtax.com.mx
+                {/* TODO: verificar si contacto@virtax.com.mx esta activo */}
+                info@virtaxconsulting.com
               </li>
             </ul>
           </div>
@@ -155,7 +157,7 @@ export default function Footer() {
             © 2024 VIRTax Consulting S.C. Todos los derechos reservados.
           </p>
           <p className="text-xs text-white/40">
-            18+ anos protegiendo empresas mexicanas
+            20+ anos protegiendo empresas mexicanas
           </p>
         </div>
       </div>

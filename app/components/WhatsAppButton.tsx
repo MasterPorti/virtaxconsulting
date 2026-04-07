@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function WhatsAppButton() {
   const [isHovered, setIsHovered] = useState(false);
-  const phoneNumber = "525555551234"; // Cambiar por numero real
+  const phoneNumber = "525513052232";
   const message = encodeURIComponent(
     "Hola, me interesa el diagnostico fiscal gratuito para mi empresa."
   );
