@@ -56,7 +56,7 @@ export default function Footer() {
                   href="#servicios"
                   className="text-white/60 hover:text-white transition-colors text-sm"
                 >
-                  Diagnostico Fiscal
+                  Diagnostico de Compliance Fiscal
                 </Link>
               </li>
               <li>
@@ -80,7 +80,15 @@ export default function Footer() {
                   href="#servicios"
                   className="text-white/60 hover:text-white transition-colors text-sm"
                 >
-                  Auditoria
+                  Auditorias IMSS, Infonavit, 3% nominas
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#servicios"
+                  className="text-white/60 hover:text-white transition-colors text-sm"
+                >
+                  Devoluciones de IVA-ISR
                 </Link>
               </li>
             </ul>

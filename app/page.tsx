@@ -30,13 +30,14 @@ export default function Home() {
             </div>
 
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-extrabold text-on-surface leading-[1.05] tracking-tight mb-6">
-              ¿Riesgos fiscales <span className="gradient-text italic">ocultos</span> en tu empresa?
+              ¿Riesgos fiscales <span className="gradient-text italic">no identificados</span> en tu empresa?
             </h1>
 
             <p className="text-lg md:text-xl text-on-surface-variant max-w-xl mb-6 leading-relaxed">
               En VIRTax Consulting realizamos un{" "}
-              <strong>diagnostico financiero y fiscal gratuito</strong> para
-              detectar riesgos antes de que se conviertan en multas.
+              <strong>diagnostico financiero y fiscal express gratuito</strong> para
+              orientarte a detectar riesgos antes de que se conviertan en multas
+              y auditorias del SAT.
             </p>
 
             {/* Trust badges */}
@@ -153,10 +154,10 @@ export default function Home() {
             Empresas que confian en nosotros
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale">
-            <div className="text-2xl font-headline font-bold">Empresa A</div>
-            <div className="text-2xl font-headline font-bold">Empresa B</div>
-            <div className="text-2xl font-headline font-bold">Empresa C</div>
-            <div className="text-2xl font-headline font-bold">Empresa D</div>
+            <div className="text-2xl font-headline font-bold">Distribuidora QMB</div>
+            <div className="text-2xl font-headline font-bold">Binomio Actuarial</div>
+            <div className="text-2xl font-headline font-bold">Panarte</div>
+            <div className="text-2xl font-headline font-bold">Eissa Ingenieria</div>
           </div>
         </div>
       </section>
@@ -181,12 +182,13 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
             {[
-              "No se si mis declaraciones estan correctas",
-              "Mi contador nunca me explica nada claramente",
-              "Tengo miedo de recibir una carta del SAT",
-              "No se cuanto debo realmente de impuestos",
-              "Siento que pago demasiados impuestos",
-              "No tengo control de mis finanzas",
+              "Recibo muchas cartas invitacion del SAT",
+              "¿Porque mi opinion de cumplimiento salio negativa si ya pague todo?",
+              "¿Porque mi empresa tiene tantas discrepancias fiscales con el SAT?",
+              "¿Que pasa si mis depositos bancarios no coinciden con lo que facture?",
+              "Me llegan multas por falta de cumplimiento de obligaciones",
+              "Adeudos de impuestos, ¿como me puedo regularizar?",
+              "¿Que gastos puedo deducir realmente para bajar mis impuestos?",
             ].map((pain, index) => (
               <div
                 key={index}
@@ -233,33 +235,32 @@ export default function Home() {
           </h2>
           <p className="text-lg text-on-surface-variant leading-relaxed mb-8 max-w-2xl mx-auto">
             Un error simple en tu contabilidad puede costarte{" "}
-            <strong className="text-red-600">hasta $500,000 MXN</strong> en
-            multas, recargos y actualizaciones. Muchos empresarios lo descubren
-            cuando ya es demasiado tarde.
+            <strong className="text-red-600">de $6,000 a $20,000 MXN por cada error</strong> en
+            multas. Muchos empresarios lo descubren cuando ya es demasiado tarde.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <p className="text-4xl font-headline font-bold text-red-600 mb-2">
-                55%
+                70-85%
               </p>
               <p className="text-sm text-on-surface-variant">
-                de PYMES tienen errores en sus declaraciones
+                de PYMES tienen inconsistencias en sus declaraciones
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <p className="text-4xl font-headline font-bold text-red-600 mb-2">
-                $47,000
+                Variables
               </p>
               <p className="text-sm text-on-surface-variant">
-                multa promedio del SAT por inconsistencias
+                multas del SAT por inconsistencias o incumplimientos
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm">
               <p className="text-4xl font-headline font-bold text-red-600 mb-2">
-                72hrs
+                15 dias
               </p>
               <p className="text-sm text-on-surface-variant">
-                para responder a un requerimiento del SAT
+                plazo para contestar inconsistencias detectadas
               </p>
             </div>
           </div>
@@ -302,10 +303,10 @@ export default function Home() {
                 2
               </div>
               <h4 className="font-headline font-bold text-xl mb-3">
-                Analizamos tu situacion
+                Analizamos tu situacion fiscal
               </h4>
               <p className="text-on-surface-variant">
-                Revisamos tus cifras contables y fiscales en busca de riesgos.
+                Revisamos de manera global tus cifras contables y fiscales en busca de discrepancias fiscales y riesgos.
               </p>
               {/* Arrow */}
               <div className="hidden md:block absolute top-12 -right-4 text-outline-variant">
@@ -323,7 +324,7 @@ export default function Home() {
                 Recibe tu reporte
               </h4>
               <p className="text-on-surface-variant">
-                En 48hrs tendras un reporte claro con riesgos y recomendaciones.
+                En 72hrs una vez recibida la informacion, tendras un reporte claro de los riesgos generales detectados y recomendaciones.
               </p>
             </div>
           </div>
@@ -355,7 +356,7 @@ export default function Home() {
                 Valor: $5,000 MXN
               </span>
               <span className="bg-cta text-white px-3 py-1 rounded-full font-bold text-sm">
-                HOY GRATIS
+                GRATUITO POR TIEMPO LIMITADO
               </span>
             </div>
           </div>
@@ -372,24 +373,37 @@ export default function Home() {
                 </span>
               </div>
               <h4 className="text-xl font-headline font-bold mb-3 text-on-surface">
-                Analisis de Cifras
+                Analisis Express de Cifras
               </h4>
               <p className="text-on-surface-variant leading-relaxed mb-4">
-                Revision basica de tus cifras contables y fiscales para
-                verificar congruencia entre lo que declaras y tu realidad.
+                Revision basica/general de tus cifras contables y fiscales para
+                verificar la congruencia entre lo que declaras y tus operaciones
+                reales segun registros contables.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-on-surface-variant">
                   <span className="material-symbols-outlined text-cta text-lg">
                     check
                   </span>
-                  Revision de declaraciones
+                  Comparativo anual de CFDIs emitidos y recibidos vs declarados
                 </li>
                 <li className="flex items-center gap-2 text-sm text-on-surface-variant">
                   <span className="material-symbols-outlined text-cta text-lg">
                     check
                   </span>
-                  Comparativo contable-fiscal
+                  Revision selectiva del IVA en meses atipicos
+                </li>
+                <li className="flex items-center gap-2 text-sm text-on-surface-variant">
+                  <span className="material-symbols-outlined text-cta text-lg">
+                    check
+                  </span>
+                  Deteccion de proveedores en listas negras del SAT
+                </li>
+                <li className="flex items-center gap-2 text-sm text-on-surface-variant">
+                  <span className="material-symbols-outlined text-cta text-lg">
+                    check
+                  </span>
+                  Cuestionario de cumplimiento fiscal
                 </li>
               </ul>
             </div>
@@ -408,15 +422,16 @@ export default function Home() {
                 Detectamos Riesgos
               </h4>
               <p className="opacity-90 leading-relaxed mb-4">
-                Identificamos posibles riesgos fiscales o
-                contables-financieros que podrian afectar tu empresa.
+                Identificamos posibles riesgos fiscales, legales (relacionados
+                con el tema fiscal) o contables-financieros que podrian afectar
+                tu empresa.
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm opacity-90">
                   <span className="material-symbols-outlined text-lg">
                     check
                   </span>
-                  Riesgos con el SAT
+                  Riesgos ante el SAT
                 </li>
                 <li className="flex items-center gap-2 text-sm opacity-90">
                   <span className="material-symbols-outlined text-lg">
@@ -463,7 +478,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials - DESACTIVADO temporalmente
+      {/* Testimonials */}
       <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
@@ -478,25 +493,25 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Maria Garcia",
-                company: "Restaurantes del Centro",
+                name: "Luisa M. Cano",
+                company: "Grupo Restaurantero Argentino",
                 quote:
-                  "Descubrieron que estaba pagando $80,000 de mas al ano por errores en mis deducciones. El diagnostico se pago solo.",
-                savings: "$80,000/ano",
+                  "Descubrieron que estaba pagando de mas en impuestos al ano por errores en mis ingresos y deducciones. Ahora me asesoran fiscalmente.",
+                savings: "Ahorro +$200,000/ano",
               },
               {
-                name: "Carlos Mendez",
-                company: "Constructora CMX",
+                name: "Heriberto Mendoza",
+                company: "Proveedor de equipo y alimentos a Zoologicos",
                 quote:
-                  "Tenia miedo de una auditoria, pero con VIRTax corregimos todo a tiempo. Ahora duermo tranquilo.",
+                  "Tenia temor de una auditoria, con las sugerencias de VIRTax corregimos todo a tiempo. Ahora estamos en continua mejora planificando nuestras finanzas y los impuestos con el soporte de los contadores.",
                 savings: "Auditoria evitada",
               },
               {
-                name: "Ana Rodriguez",
+                name: "Arely Rodriguez",
                 company: "E-commerce Fashion",
                 quote:
-                  "Por fin entiendo mi situacion fiscal. Me explican todo en terminos simples, no en lenguaje de contador.",
-                savings: "Claridad total",
+                  "Por fin entiendo mi situacion fiscal. Me ubicaron en el regimen adecuado donde pago impuestos justos que me permiten operar con crecimiento y en terminos simples, no en lenguaje de contador.",
+                savings: "Pago justo de impuestos",
               },
             ].map((testimonial, index) => (
               <div
@@ -537,7 +552,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-surface-container-low">
@@ -555,23 +569,43 @@ export default function Home() {
             {[
               {
                 q: "¿Es realmente gratis?",
-                a: "Si, el diagnostico inicial es 100% gratuito y sin compromiso. No hay cargos ocultos ni obligacion de contratar.",
+                a: "Si, el diagnostico express inicial es 100% gratuito y sin compromiso, es por tiempo limitado. No hay cargos ocultos ni obligacion de contratar.",
               },
               {
                 q: "¿Cuanto tiempo toma?",
-                a: "La llamada inicial dura aproximadamente 30 minutos. El reporte completo lo tendras en 48 horas.",
+                a: "La llamada inicial dura aproximadamente 30 minutos donde se solicita informacion a la empresa. El reporte completo lo tendras en 72 horas a partir de que la empresa entregue completa la informacion.",
               },
               {
                 q: "¿Mis datos estan seguros?",
-                a: "Absolutamente. Toda la informacion es 100% confidencial y manejada bajo estrictos protocolos de seguridad.",
+                a: "Absolutamente. Toda la informacion es 100% confidencial y manejada bajo estrictos protocolos de seguridad, la informacion de los CFDIs se descarga del SAT utilizando las contrasenas de la empresa que maneja su mismo personal, no manejamos claves ni firmas electronicas de terceros.",
               },
               {
                 q: "¿Que pasa despues del diagnostico?",
-                a: "Te presentamos los hallazgos y, si lo deseas, podemos ayudarte a corregir los problemas encontrados. Sin presion.",
+                a: "Te presentamos los hallazgos y, si lo deseas, podemos ayudarte a corregir los problemas encontrados. Sin ninguna presion.",
+              },
+              {
+                q: "¿Si soy persona fisica con actividad empresarial me pueden hacer un diagnostico?",
+                a: "Claro que si, en caso que no cuentes con la contabilidad formal se te hara el diagnostico con base en los CFDIs emitidos y recibidos y con base en las respuestas que des al cuestionario de cumplimiento que aplicamos podemos revisar algun otro tema de interes para tu negocio.",
+              },
+              {
+                q: "¿Si soy persona fisica extranjera que inicie mi negocio en Mexico me pueden hacer un diagnostico?",
+                a: "Claro que si, en el check list adicionalmente revisamos la correcta apertura y cumplimiento de obligaciones en Mexico, ademas del aspecto fiscal.",
               },
               {
                 q: "¿Sirve para mi tipo de empresa?",
                 a: "Atendemos todo tipo de empresas: PYMES, emprendedores, comercios, servicios profesionales y mas.",
+              },
+              {
+                q: "¿El diagnostico express incluye correcciones a mis declaraciones o discrepancias con el SAT?",
+                a: "Solo incluye el diagnostico y reporte de sugerencias o recomendaciones, si requieren un servicio adicional podemos hacerles una cotizacion con precios justos sin compromiso.",
+              },
+              {
+                q: "¿Si requiero un servicio especializado como abogados, notarios o actuarios, pueden ayudarme?",
+                a: "Si, trabajamos con diversos especialistas de manera continua que nos permite proporcionar un servicio integral a los clientes o referirlos segun sea el caso.",
+              },
+              {
+                q: "¿Estan autorizados para presentar dictamenes ante el IMSS, Infonavit o SAT?",
+                a: "Si, contamos con los registros para dictaminar ante el IMSS, Infonavit, 3% ante las secretarias de Finanzas de la CDMX o Estado de Mexico y tambien para dictamenes fiscales voluntarios ante el SAT o dictamen fiscal por enajenacion de acciones.",
               },
             ].map((faq, index) => (
               <div
