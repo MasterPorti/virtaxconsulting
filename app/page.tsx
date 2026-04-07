@@ -405,6 +405,12 @@ export default function Home() {
                   </span>
                   Cuestionario de cumplimiento fiscal
                 </li>
+                <li className="flex items-center gap-2 text-sm text-on-surface-variant">
+                  <span className="material-symbols-outlined text-cta text-lg">
+                    check
+                  </span>
+                  Evaluacion general de obligaciones corporativas
+                </li>
               </ul>
             </div>
 
