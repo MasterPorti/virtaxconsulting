@@ -148,16 +148,19 @@ export default function Home() {
       </section>
 
       {/* Social Proof Bar */}
-      <section className="py-8 bg-surface-container border-y border-outline-variant/10">
+      <section className="py-10 bg-[#1a1a2e] border-y border-outline-variant/10">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <p className="text-center text-sm text-on-surface-variant mb-6 uppercase tracking-widest">
+          <p className="text-center text-sm text-white/60 mb-8 uppercase tracking-widest">
             Empresas que confian en nosotros
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale">
-            <div className="text-2xl font-headline font-bold">Distribuidora QMB</div>
-            <div className="text-2xl font-headline font-bold">Binomio Actuarial</div>
-            <div className="text-2xl font-headline font-bold">Panarte</div>
-            <div className="text-2xl font-headline font-bold">Eissa Ingenieria</div>
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
+            <Image src="/empresas/LOGO-ASCOM.png" alt="ASCOM" width={120} height={50} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+            <Image src="/empresas/LOGO-AZTECA.png" alt="Azteca" width={120} height={50} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+            <Image src="/empresas/LOGO-DELTA.png" alt="Delta" width={120} height={50} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+            <Image src="/empresas/LOGO-DUONS.png" alt="Duons" width={120} height={50} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+            <Image src="/empresas/LOGO-GOMASA.png" alt="Gomasa" width={120} height={50} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+            <Image src="/empresas/LOGO-IHI.png" alt="IHI" width={120} height={50} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+            <Image src="/empresas/LOGO-PANARTE.png" alt="Panarte" width={120} height={50} className="h-10 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
           </div>
         </div>
       </section>
