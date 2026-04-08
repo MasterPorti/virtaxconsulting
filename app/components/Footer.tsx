@@ -165,7 +165,7 @@ export default function Footer() {
             © 2024 VIRTax Consulting S.C. Todos los derechos reservados.
           </p>
           <p className="text-xs text-white/40">
-            20+ anos protegiendo empresas mexicanas
+            20+ años protegiendo empresas mexicanas
           </p>
         </div>
       </div>

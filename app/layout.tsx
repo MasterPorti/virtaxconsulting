@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "VIRTax Consulting S.C. | Soluciones Contables y Fiscales en Mexico",
   description:
-    "Con mas de 23 anos de experiencia, apoyamos a pymes y emprendedores guiandolos para que cumplan, crezcan y alcancen la rentabilidad.",
+    "Con mas de 23 años de experiencia, apoyamos a pymes y emprendedores guiandolos para que cumplan, crezcan y alcancen la rentabilidad.",
 };
 
 export default function RootLayout({

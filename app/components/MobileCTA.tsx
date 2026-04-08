@@ -32,7 +32,7 @@ export default function MobileCTA() {
           AGENDA TU DIAGNOSTICO GRATIS
         </Link>
         <p className="text-center text-xs text-on-surface-variant mt-2">
-          Sin costo · Sin compromiso · Resultados en 48hrs
+          Sin costo · Sin compromiso · Resultados en 72 HRS
         </p>
       </div>
     </div>

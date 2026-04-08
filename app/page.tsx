@@ -67,7 +67,7 @@ export default function Home() {
                 >
                   check_circle
                 </span>
-                Resultados en 48hrs*
+                Resultados en 72 HRS*
               </span>
             </div>
             <p className="text-xs text-on-surface-variant/70 mb-6">
@@ -92,7 +92,7 @@ export default function Home() {
                   20+
                 </p>
                 <p className="text-sm text-on-surface-variant">
-                  Anos de experiencia
+                  Años de experiencia
                 </p>
               </div>
               <div>
@@ -652,13 +652,13 @@ export default function Home() {
           </Link>
 
           <p className="mt-6 text-sm opacity-80">
-            Sin costo · Sin compromiso · Resultados en 48hrs
+            Sin costo · Sin compromiso · Resultados en 72 HRS
           </p>
 
           <div className="flex justify-center gap-8 mt-10 pt-10 border-t border-white/20">
             <div>
               <p className="text-4xl font-bold">20+</p>
-              <p className="text-sm opacity-80">Anos de experiencia</p>
+              <p className="text-sm opacity-80">Años de experiencia</p>
             </div>
             <div>
               <p className="text-4xl font-bold">200+</p>
